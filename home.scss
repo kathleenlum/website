@@ -1,31 +1,60 @@
+/* Define the main Navigation block */
 .navbar-wrapper {
-  margin: left;
-  padding-bottom: 10px;
-  padding-top: 5px;
-  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  height: 35px auto;
+  //background-color: 3D426F;
+}
+/* Remove bullets, margin and padding */
+.navbar-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-wrapper li {
+  float: left;
+  /* Or you can use display: inline; */
+  //border: 3px solid orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Define the block styling for the links */
+.navbar-wrapper li a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 15px;
+  align-items: baseline;
+  text-decoration: none;
   color: black;
 }
-a1 {
-  display: inline;
-  color: grey;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+/* This is optional, however if you want to display the active link differently apply a background to it */
+.navbar-wrapper li a:active {
+  text-decoration: underline;
+}
+.navbar-wrapper li a:hover {
+  color: 616A72;
 }
 .home-kathleen {
-  padding-left: 20px;
-
+  // border: 3px solid blue;
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  padding-left: 5px;
+.greeting{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+  margin-left: 10%;
   
+  color: black;
 }
-h2 {
-  
+.greeting .my-name {
+  font-size: 35;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  //color: red;
 }
-h3 {
-
+.greeting .short-bio {
+  //color:yellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .lets-connect {
   font-family: Arial, Helvetica, sans-serif;
