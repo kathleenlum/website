@@ -1,8 +1,10 @@
 /* Define the main Navigation block */
 .navbar-wrapper {
   display: block;
-  height: 35px auto;
+  height: 35px;
+  width: 100%;
   //background-color: 3D426F;
+  // border: 3px solid orange;
 }
 /* Remove bullets, margin and padding */
 .navbar-wrapper ul {
@@ -32,19 +34,20 @@
 .navbar-wrapper li a:hover {
   color: 616A72;
 }
-.home-kathleen {
-  // border: 3px solid blue;
-  position: relative;
-  display: inline-block;
+.about-me {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  border: 3px solid orange;
+}
+
+.home-kathleen img {
+  height: 50%;
   margin: 10px;
 }
 .greeting{
-  display: flex;
   flex-direction: column;
-  margin-right: 10%;
-  margin-left: 10%;
-  
   color: black;
+  border: 3px solid yellow;
 }
 .greeting .my-name {
   font-size: 35;
@@ -53,14 +56,10 @@
   //color: red;
 }
 .greeting .short-bio {
-  //color:yellow;
+  // color:yellow;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // border: 3px solid orange;
 }
-.lets-connect {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-}
-
-a {
-  font-family: Arial, Helvetica, sans-serif;
+.about-section {
+  
 }
