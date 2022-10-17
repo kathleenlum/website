@@ -1,0 +1,50 @@
+.navbar-wrapper {
+  display: block;
+  height: 35px;
+  width: 100%;
+  //background-color: 3D426F;
+  // border: 3px solid orange;
+}
+/* Remove bullets, margin and padding */
+.navbar-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar-wrapper li {
+  float: left;
+  /* Or you can use display: inline; */
+  //border: 3px solid orange;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Define the block styling for the links */
+.navbar-wrapper li a {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 15px;
+  align-items: baseline;
+  text-decoration: none;
+  color: black;
+}
+.navbar-wrapper li a:active {
+  text-decoration: underline;
+}
+.navbar-wrapper li a:hover {
+  color: 616A72;
+}
+.recipe-wrapper {
+  padding-top:30px;
+  margin-left: 10px;
+}
+.chocoCookie {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  max-width: 200px;
+  transition: transform .2s; /* Animation */
+  
+}
+.chocoCookie img {
+    border-radius: 10px;
+}
+.chocoCookie:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}

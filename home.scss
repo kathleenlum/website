@@ -1,4 +1,4 @@
-/* Define the main Navigation block */
+
 .navbar-wrapper {
   display: block;
   height: 35px;
@@ -27,28 +27,34 @@
   text-decoration: none;
   color: black;
 }
-/* This is optional, however if you want to display the active link differently apply a background to it */
 .navbar-wrapper li a:active {
   text-decoration: underline;
 }
 .navbar-wrapper li a:hover {
   color: 616A72;
 }
+
+
 .about-me {
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  border: 3px solid orange;
+  // border: 3px solid orange;
   height: 300px;
+  justify-content: space-evenly;
 }
 
 .home-kathleen img {
-  height: 250px;
-  margin: 10px;
+  float: left;
+  max-width: 400px;
+  margin: 30px;
+
 }
 .greeting{
+  float: right;
   flex-direction: column;
   color: black;
-  border: 3px solid yellow;
+  // border: 3px solid yellow;
+  align-self: center;
+  margin-top: 50px;
+  margin-right: 30px;
 }
 .greeting .my-name {
   font-size: 35;
@@ -59,8 +65,7 @@
 .greeting .short-bio {
   // color:yellow;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  // border: 3px solid orange;
-}
-.about-section {
-  
+  border: 3px solid orange;
+  max-width: 400px;
+
 }
