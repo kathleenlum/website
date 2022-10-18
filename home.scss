@@ -3,7 +3,7 @@
   display: block;
   height: 35px;
   width: 100%;
-  //background-color: 3D426F;
+  // background-color: pink;
   // border: 3px solid orange;
 }
 /* Remove bullets, margin and padding */
@@ -33,12 +33,23 @@
 .navbar-wrapper li a:hover {
   color: 616A72;
 }
-
+@media (max-width: 400px) {
+  .navbar-wrapper {
+    display: none;
+  }
+  .about-me {
+    // border: 3px solid orange;
+    height: 300px;
+    justify-content: center;
+  
+  }
+}
 
 .about-me {
   // border: 3px solid orange;
   height: 300px;
   justify-content: space-evenly;
+  
 }
 
 .home-kathleen img {
@@ -56,8 +67,10 @@
   margin-top: 50px;
   margin-right: 30px;
   margin-bottom: 30px;
+
 }
-.greeting .my-name {
+
+.my-name {
   font-size: 35;
   font-family: Georgia, serif;
   font-weight: bold;
